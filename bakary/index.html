@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mega</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script src="https://js.cx/libs/animate.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-top container">
+      <img src="img/logo.png" alt="logo.png">
+      <button class="yellow-btn"><a href="contactUs.html">Reservation</a></button>
+      <button class="yellow-btn"><a href="auth.html">Log In</a></button>
+    </div>
+    <div class="header-bottom container">
+      <ul class="menu">
+        <li><a onclick="animateText(textExample)">Magic</a></li>
+      </ul>
+      
+<div class="background"></div>
+      <div class="social-link">
+        <img src="img/insta.svg" alt="insta.svg">
+        <img src="img/facebook.svg" alt="facebook.svg">
+        <img src="img/twitter.svg" alt="twitter.svg">
+        <img src="img/pinterest.svg" alt="pinterest.svg">
+      </div>
+    </div>
+    <div class="main-block container">
+      <div class="main-block_text">
+       <h1 class="ml1">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Welcome to bakery</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+         <textarea id="textExample" rows="5" cols="60">We are glad to see you on the website of our bakery! We hope you will find here what you want<3
+  </textarea>
+        <button class="btn view"><a href="https://www.youtube.com/@user-rf3vk7qo6d">View Menu</a></button>
+      </div>
+      <img src="img/main-img.svg" alt="main-img.svg">
+    </div>
+  </div>
+  <script>
+    function animateText(textArea) {
+      let text = textArea.value;
+      let to = text.length,
+        from = 0;
+
+      animate({
+        duration: 5000,
+        timing: bounce,
+        draw: function(progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.slice(0, Math.ceil(result))
+        }
+      });
+    }
+
+
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+        }
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+   <div id="footer" class="container">
+        <div class="contact">
+            <div class="first">
+                <h5 class="title color">CONTACT</h5>
+                <div class="address" style="color: #E1B168">\\\MEGA</div>
+                <div class="contactNum">87987219837</div>
+                <div class="mail">asdf@smth.tor</div>
+            </div>
+            <div class="third">
+                <h5 class="title color">WORKING HOURS</h5>
+                <div class="contactNum">Mon – Fri: <span class="color">7.00am – 6.00pm</span></div>
+                <div class="contactNum">Sat: <span class="color">7.00am – 6.00pm</span></div>
+                <div class="contactNum">Sun: <span class="color">8.00am – 6.00pm</span></div>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+
+</html>

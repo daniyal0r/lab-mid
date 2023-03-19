@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+}
+textarea {
+  display: block;
+  border: 1px solid #BBB;
+  color: #444;
+  font-size: 110%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 0 60px;
+}
+
+.header {
+  background-color: #292E36;
+  height: 100vh;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #292E36;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.header-top img {
+  height: 150px;
+}
+
+.btn {
+  color: white;
+  background-color: #292E36;
+  border: 1px solid #E1B168;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.yellow-btn {
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: #E1B168;
+  border: none;
+  border-radius: 20px;
+}
+.yellow-btn a {
+  text-decoration: none;
+  color: #292E36;
+}
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px #5C6168;
+  /* padding-top: 10px;   */
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.menu li {
+  padding-right: 60px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu li a:hover {
+  color: #E1B168;
+}
+
+.social-link img {
+  padding-right: 20px;
+}
+
+.main-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: #292E36;
+  color: #ffffff;
+}
+
+.main-block_text {
+  width: 50%;
+}
+
+.main-block img {
+  width: 40%;
+  height: 500px;
+}
+
+h1 {
+  font-size: 63px;
+  font-weight: 400;
+}
+
+.main-block_text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.view {
+  margin-top: 15px;
+  color: #E1B168;
+}
+.view a {
+  text-decoration: none;
+  color: #E1B168;
+}
+.title {
+  border: 1px solid #E1B168;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
+#contactUs-block {
+  
+}
+.reservation { 
+  background-image: url(img/backgroundPhoto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-block {  
+  background-color: rgba(41, 46, 54, 0.80);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 140px 0;
+}
+.book-block .title {
+  margin-top: 60px;
+}
+.book-block h5 {
+  margin: 0;
+} 
+.color {
+  color: #ffffff;
+}
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 30px;
+}
+.input-block {
+  width: 640px;
+  padding: 0 130px 10px 130px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.input {
+  background-color: transparent;
+  border: 1px solid #858585;
+  font-size: 22px;
+  padding: 10px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.big {
+  width: 280px;
+}
+.small {
+  width: 180px;
+}
+::placeholder {
+  color: #ffffff;
+}
+.bookBtn {
+  margin-top: 30px;
+  padding: 20px 50px;
+  font-size: 22px;
+  width: 30%;
+  margin-bottom: 140px;
+}
+#footer {
+  background-color: #292E36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer p {
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  display: block;
+  margin: 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.first, .third {
+  width: 20%;
+  padding: 50px;
+}
+.first h5, .third h5 {
+  margin-top: 0;
+}
+address {
+  color: #ffffff;
+}
+.contactNum, .mail {
+  color: #E1B168;
+}
+.third div {
+  text-align: end;
+}
+.auth-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.input-group {
+  padding-bottom: 20px;
+}
+.input-group div {
+  font-size: 20px;
+}
+.input-group input {
+  padding: 10px 10px;
+}
+.auth-block .btn {
+  padding: 10px 70px;
+}
+.auth-block .btn  a {
+  text-decoration: none;
+  color: #E1B168;
+}
